@@ -54,6 +54,7 @@
           this.display += button.text;
         } else if (button.text == 'AC') {
           this.display = '0';
+          this.previousValue = null;
         } else if (button.text == 'C') {
           // This clears one number from what is inputed. 0 indicates the starting number
           // -1 signifies the end. so slice(0,-1) means extract the first element to the
@@ -168,14 +169,11 @@
 <style scoped>
   #Calculator{
     margin: 0 auto;
-    /* width: 320px; */
     width: 25%;
     height: auto;
-    /* height: 530px; */
     background: #999;
     border-radius: 5px;
     opacity: 0.8;
-    /* background: #f4f4f4; */
     font-family: Helvetica;
   }
 
@@ -198,7 +196,6 @@
 
   .button{
     display: inline-block;
-    /* background: #f4f4f4; */
     background: #fff;
     color: #000;
     box-sizing: border-box;
