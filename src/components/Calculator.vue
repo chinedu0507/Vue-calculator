@@ -53,7 +53,7 @@
           // display the numbers on the screen
           this.display += button.text;
         } else if (button.text == 'AC') {
-          this.display = '';
+          this.display = '0';
         } else if (button.text == 'C') {
           // This clears one number from what is inputed. 0 indicates the starting number
           // -1 signifies the end. so slice(0,-1) means extract the first element to the
